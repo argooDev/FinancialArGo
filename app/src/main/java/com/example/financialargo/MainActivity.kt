@@ -5,7 +5,6 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
@@ -13,24 +12,18 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.modifier.modifierLocalConsumer
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.financialargo.ui.theme.FinancialArGoTheme
 import com.example.financialargo.ui.theme.HeaderBackground
 import com.example.financialargo.ui.theme.MainBackground
 
@@ -61,7 +54,8 @@ class MainActivity : ComponentActivity() {
                         shape = RoundedCornerShape(
                             bottomEnd = 25.dp,
                             bottomStart = 25.dp
-                        )),
+                        )
+                    ),
                 verticalArrangement = Arrangement.SpaceAround,
                 horizontalAlignment = Alignment.CenterHorizontally
 
@@ -78,7 +72,9 @@ class MainActivity : ComponentActivity() {
                 ) {
                     Button(
                         onClick = {},
-                        Modifier.height(35.dp).width(160.dp)
+                        Modifier
+                            .height(35.dp)
+                            .width(160.dp)
 
 
                     ) {
@@ -86,7 +82,9 @@ class MainActivity : ComponentActivity() {
                     }
                     Button(
                         onClick = {},
-                        Modifier.height(35.dp).width(160.dp)
+                        Modifier
+                            .height(35.dp)
+                            .width(160.dp)
 
                     ) {
                         Text(text = stringResource(R.string.gain))
@@ -94,6 +92,47 @@ class MainActivity : ComponentActivity() {
                     }
                 }
 
+            }
+
+            Column(
+                Modifier
+                    .background(
+                        Color.Gray,
+                        shape = RoundedCornerShape(20.dp)
+                    )
+                    .fillMaxWidth()
+                    .fillMaxHeight(0.5f)
+                    .padding(20.dp)
+
+            ) {
+                Row (
+                    horizontalArrangement = Arrangement.SpaceBetween
+                ){
+                    Button(
+                        onClick = {}
+                    ){
+                        Text(text = stringResource(R.string.Day))
+
+                    }
+                    Button(
+                        onClick = {}
+                    ) {
+                        Text(text = stringResource(R.string.Week))
+
+                    }
+                    Button(
+                        onClick = {}
+                    ) {
+                        Text(text = stringResource(R.string.Month))
+
+                    }
+                    Button(
+                        onClick = {}
+                    ) {
+                        Text(text = stringResource(R.string.Year))
+
+                    }
+                }
             }
 
         }
