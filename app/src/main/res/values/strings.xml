@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FinancialArGo</string>
+    <string name="counterMain">0₽</string>
+    <string name="cost">Расходы</string>
+    <string name="gain">Доходы</string>
+
+
+</resources>
