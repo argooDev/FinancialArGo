@@ -1,13 +1,16 @@
 <resources>
     <string name="app_name">FinancialArGo</string>
     <string name="counterMain">0₽</string>
-    <string name="cost">Расходы</string>
+    <string name="expenses">Расходы</string>
     <string name="gain">Доходы</string>
     <string name="Day">День</string>
     <string name="Week">Неделя</string>
     <string name="Month">Месяц</string>
     <string name="Year">Год</string>
     <string name="Period">Период</string>
+    <string name="Product">Продукты</string>
+    <string name="Transport">Транспорт</string>
+    <string name="Cloth">Одежда</string>
 
 
 </resources>
